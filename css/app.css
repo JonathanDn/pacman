@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+}
+
+body.dark {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+}
+
+/*special pacman font*/
+/*defining*/
+@font-face {
+  font-family: emulogic;
+  src: url(../fonts/ufonts.com_emulogic.woff);
+}
+/*usage*/
+.highscore {
+  font-family: emulogic;
+  color: white;
+  text-align: center;
+}
+
+/*styled pacman selectors*/
+
+.empty {
+  background-color: black;
+  background-color: black;
+}
+
+.wall {
+  background-color: black;
+  background-image: url("../img/wall.jpg");
+  background-color: black;
+}
+
+.food {
+  background-color: black;
+  background-image: url("../img/food.jpg");
+  background-size: 100%;
+}
+
+.pacman {
+  background-color: black;
+  background-image: url("../img/pacman.jpg");
+  background-size: 100%;
+}
+
+.ghost {
+  background-color: black;
+  background-image: url("../img/door1.jpg");
+  background-size: 100%;
+}
+
+.ghost1{
+  background-color: black;
+  background-image: url("../img/ghost1.jpg");
+  background-size: 100%;
+  /*z-index: */
+}
+
