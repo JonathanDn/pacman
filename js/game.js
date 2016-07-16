@@ -86,7 +86,3 @@ function renderCell(location, value) {
   var elCell = document.querySelector(cellSelector);
   elCell.innerHTML = value;
 }
-
-
-
-
