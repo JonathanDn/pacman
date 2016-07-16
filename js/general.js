@@ -1,30 +1,16 @@
 function printMat(mat, selector) {
-  
   var elContainer = document.querySelector(selector);
-  // added cell spacing / padding / border = 0 to make it look like a real pacman
   var strHTML = '<table cellpadding="0" cellspacing="0" border="0" align="center"><tbody>';
   mat.forEach(function (row, i) {
     strHTML += '<tr>';
-
     row.forEach(function (cell, j) {
-      
       var className = 'cell cell' + i + '-' + j;
-      
       strHTML += '<td class="' + className +   '"> ' + cell +  ' </td>'
     });    
-    
-    strHTML += '</tr>'
-    
-    
-    
+    strHTML += '</tr>'  
   })
   strHTML += '</tbody></table>';
-  
-  // console.log('strHTML', strHTML);
-  
-
   elContainer.innerHTML = strHTML;
-  
 }
 
 function getRandomColor() {
@@ -36,8 +22,6 @@ function getRandomColor() {
     return color;
 }
 
-// Returns a random integer between min (included) and max (included)
-// Using Math.round() will give you a non-uniform distribution!
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
